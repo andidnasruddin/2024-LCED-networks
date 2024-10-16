@@ -47,8 +47,8 @@ p2 <-AllData |>
        title="Clay layer")
 p2
 p3<- AllData |>
-  group_by(Type,DomPlantName) |>
-  summarize(Count=n()) |>
+  dplyr::group_by(Type,DomPlantName) |>
+  dplyr::summarize(Count=n()) |>
   ggplot(aes(x=Type,y=Count, fill=DomPlantName)) +
   geom_bar(stat="identity") +
   labs(x="Inside or outside depression",
@@ -79,6 +79,7 @@ model <- lmerTest::lmer(ClayThick ~ Type + (1 | Point), data = AllData)
 summary(model)
 
 # test if the bare soil cover is different
+
 
 # test if the species community composition is different with a permanova
 
