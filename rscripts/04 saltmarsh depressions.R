@@ -1,4 +1,5 @@
 #### analysis of the saltmarsh data we collected on monday with the LCED course
+# testing testing testing
 
 # clear everything in the R environment
 rm(list = ls())
@@ -11,7 +12,7 @@ library(lme4)
 library(lmerTest)
 
 # we work with the following database that you made on monday
-# browseURL("https://docs.google.com/spreadsheets/d/1gAhwMWjA6aD3SMHb0j9X_4xYaxsDBNre6B5XyWDgzzI/edit?usp=sharing")
+browseURL("https://docs.google.com/spreadsheets/d/1gAhwMWjA6aD3SMHb0j9X_4xYaxsDBNre6B5XyWDgzzI/edit?usp=sharing")
 
 # read the data tables from the database
 MetTables<- read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2zhCjdrR-4sMpcfvyXunOBdLXKI2VYBnTa8u2Xs-yCTQmLYhE54bl7g9a2-9zRxvgqmCe0RXDuW1X/pub?gid=894288297&single=true&output=csv')
